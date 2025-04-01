@@ -1,91 +1,115 @@
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
+/* Table Styling */
 table {
     border-collapse: collapse;
     width: 80%;
     margin: 50px auto;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    background-color: #333;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 159, 28, 0.5);
+    border-radius: 12px;
     overflow: hidden;
 }
 
+/* Table Headers */
 th {
-    background-color: #3f3f3f;
+    background-color: #ff9f1c;
     color: #fff;
     font-weight: bold;
-    padding: 10px;
+    padding: 12px;
     text-align: left;
+    text-shadow: 2px 2px 5px rgba(255, 159, 28, 0.4);
 }
 
+/* Table Data Cells */
 td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    border-bottom: 1px solid #444;
     text-align: left;
+    color: #fff;
 }
 
+/* Row Highlighting */
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #282828;
 }
 
+tr:nth-child(odd) {
+    background-color: #353535;
+}
+
+/* Button Styling */
 .btn {
-    background-color: #4CAF50;
+    background-color: #ff9f1c;
     border: none;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 159, 28, 0.2);
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #3e8e41;
+    background-color: #e68910;
+    transform: scale(1.05);
 }
 
+/* Delete Button Styling */
 .btn.delete {
     background-color: #f44336;
 }
 
 .btn.delete:hover {
     background-color: #d32f2f;
+    transform: scale(1.05);
 }
 
-
-
+/* Edit Button Styling */
 .edit-button {
     background-color: #4CAF50;
     color: #fff;
     border: none;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 10px 15px;
+    border-radius: 6px;
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
 }
 
- .delete-button {
+.edit-button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+}
+
+/* Delete Button Styling */
+.delete-button {
     background-color: #ff0000;
     color: #fff;
     border: none;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 10px 15px;
+    border-radius: 6px;
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-.edit-button:hover {
-    background-color: #3e8e41;
-}
-.delete-button:hover {
-    background-color: #bd0000;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
 }
 
+.delete-button:hover {
+    background-color: #bd0000;
+    transform: scale(1.05);
+}

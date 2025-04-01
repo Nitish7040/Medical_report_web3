@@ -1,57 +1,109 @@
-.Navbar{
+/* General Navbar Styling */
+.Navbar {
     display: flex;
     flex-direction: row;
     height: 4rem;
-    background-color: #333;
-}
-.nav__name{
-    display: flex;
-   flex: 1;
-   align-items: center;
-   justify-content: center;
-   color: white;
-}
-.nav__name img{ padding: 2rem;}
-.nav__networkSelector{
-    display: flex;
-   flex:1;
-   align-items: center;
-}
-.nav__networkSelector select{
-    border: 2px solid white;
-    padding: 0.5rem 1.5rem;
-    border-radius:0.4em;
-    margin: 2rem;
-    background-color: #333;
-    color: white;
-}
-.nav__balance{
-    flex: 1;
-    padding: 1rem;
-    display: flex;
+    background: linear-gradient(145deg, #1b1b1b, #2b2b2b);
+    box-shadow: 5px 5px 15px #0d0d0d, -5px -5px 15px #2d2d2d;
     align-items: center;
-    justify-content: center;
-    
+    padding: 0 1.5rem;
+    border-radius: 12px;
 }
-.nav__balance-box{
-    border: 2px solid white;
-    border-radius: 2rem;
-    flex:1;
-    height: 2.5rem;
-    margin: 2rem 4rem ;
-    cursor: pointer;
-}
-select option { color: white; }
 
-.nav__myBalance{
-    color: white;
+/* Logo and Name */
+.nav__name {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: #ff9f1c;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 10px rgba(255, 159, 28, 0.7);
 }
-.nav__myAccount{
-    color: white;
+
+.nav__name img {
+    padding-right: 1rem;
+}
+
+/* Network Selector */
+.nav__networkSelector {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__networkSelector select {
+    background: linear-gradient(145deg, #2b2b2b, #3a3a3a);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    color: #ffbf69;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: inset 3px 3px 8px #121212, inset -3px -3px 8px #3d3d3d;
+    transition: all 0.3s ease;
+}
+
+.nav__networkSelector select:hover {
+    background: linear-gradient(145deg, #3a3a3a, #4b4b4b);
+}
+
+/* Balance and Account Section */
+.nav__balance {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.identicon{
+
+.nav__myBalance {
+    color: #ffbf69;
+    font-size: 1rem;
+    text-shadow: 2px 2px 5px rgba(255, 191, 105, 0.7);
+    margin-right: 1rem;
+}
+
+/* Connect Button */
+.nav__balance-box {
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(145deg, #2b2b2b, #3a3a3a);
+    color: #ff9f1c;
+    box-shadow: 5px 5px 15px #0d0d0d, -5px -5px 15px #2d2d2d;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__balance-box:hover {
+    background: linear-gradient(145deg, #3a3a3a, #4b4b4b);
+    transform: scale(1.05);
+    box-shadow: 7px 7px 15px #0d0d0d, -7px -7px 15px #3a3a3a;
+}
+
+/* Account Address with Blockies */
+.nav__myAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(145deg, #2b2b2b, #3a3a3a);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px #0d0d0d, -4px -4px 12px #2d2d2d;
+    transition: all 0.3s ease;
+}
+
+.nav__myAccount:hover {
+    background: linear-gradient(145deg, #3a3a3a, #4b4b4b);
+}
+
+/* Identicon (Blockies) */
+.identicon {
     margin-left: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(255, 159, 28, 0.5);
 }

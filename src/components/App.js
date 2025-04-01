@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import "../App.css";
+
+import Home from "./Home/Home";
 import Data from "./Data/Data";
 import Form from "./Form/Form";
 import Navbar from "./Navbar/Navbar";
@@ -51,15 +53,18 @@ function App() {
 
   return (
     <div className="App">
-      <div className="navbar">
-        <Navbar />
-        <Option />
-        <Routes>
-          <Route path="/" exact element={<Form />} />
-          <Route path="/Data" element={<Data />} />
-        </Routes>
-        <Alert />
-      </div>
+      <Routes>
+        {/* Home path - No navbar and other elements */}
+        <Route path="/" element={<Home />} />
+
+        {/* Form path - Render Navbar and Option with Form */}
+        <Route path="/Form" element={<><Navbar /><Option /><Form /></>} />
+
+        {/* Data path */}
+        <Route path="/Data" element={<Data />} />
+      </Routes>
+
+      <Alert />
     </div>
   );
 }

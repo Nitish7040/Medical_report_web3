@@ -51,7 +51,7 @@ const Form = () => {
           value={name === 0 ? "" : name}
           onChange={(e) => setName(e.target.value)}
           required
-          placeholder="Aman Dhattarwal"
+          placeholder="Your Name"
         />
 
         <label htmlFor="age">Age:</label>

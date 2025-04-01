@@ -21,7 +21,7 @@ contract MedicalRecords {
         uint recordId,
         uint timestamp,
         string name,
-        uint age,
+        uint age,898u
         string gender,
         string bloodType,
         string allergies,
